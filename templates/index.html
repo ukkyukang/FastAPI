@@ -1,0 +1,115 @@
+<html>
+<head>
+  <!-- <link rel="stylesheet" href="\static\bulma-0.9.1\bulma\css\bulma.css"> -->
+  <link href="{{ url_for('static', path='/bulma-0.9.1/bulma/css/bulma.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+  <section class="hero is-danger">
+  <div class="hero-body">
+    <p class="title">
+      UKSTUDIO.IO
+    </p>
+    <p class="subtitle">
+      Danger subtitle
+    </p>
+  </div>
+</section>
+
+<article class="media">
+  <figure class="media-left">
+    <p class="image is-64x64">
+      <img src="https://bulma.io/images/placeholders/128x128.png">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="field">
+      <p class="control">
+        <textarea class="textarea" placeholder="Add a comment..."></textarea>
+      </p>
+    </div>
+    <nav class="level">
+      <div class="level-left">
+        <div class="level-item">
+          <a class="button is-info">Submit</a>
+        </div>
+      </div>
+      <div class="level-right">
+        <div class="level-item">
+          <label class="checkbox">
+            <input type="checkbox"> Press enter to submit
+          </label>
+        </div>
+      </div>
+    </nav>
+  </div>
+</article>
+
+<div width:500px height:500px>
+<div class="card">
+  <div class="card-image">
+    <figure class="image is-4by3">
+      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-left">
+        <figure class="image is-48x48">
+          <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+        </figure>
+      </div>
+      <div class="media-content">
+        <p class="title is-4">John Smith</p>
+        <p class="subtitle is-6">@johnsmith</p>
+      </div>
+    </div>
+</div>
+    <div class="content">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+      <a href="#">#css</a> <a href="#">#responsive</a>
+      <br>
+      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+    </div>
+  </div>
+</div>
+
+<form action="/login" method="post">
+  <label for="fname">id:</label>
+    <input type="text" id="username" name="username"><br><br>
+  <label for="lname">password:</label>
+    <input type="text" id="password" name="password"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<nav class="level">
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Tweets</p>
+      <p class="title">3,456</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Following</p>
+      <p class="title">123</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Followers</p>
+      <p class="title">456K</p>
+    </div>
+  </div>
+  <div class="level-item has-text-centered">
+    <div>
+      <p class="heading">Likes</p>
+      <p class="title">789</p>
+    </div>
+  </div>
+</nav>
+
+</body>
+</html>
